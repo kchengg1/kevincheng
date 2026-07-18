@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kevin Cheng</title>
+  <style>
+    :root {
+      --fg: #1a1a1a;
+      --muted: #6b7280;
+      --bg: #ffffff;
+      --accent: #1a1a1a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #ededed;
+        --muted: #9ca3af;
+        --bg: #0d0d0d;
+        --accent: #ededed;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-font-smoothing: antialiased; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--fg);
+      background: var(--bg);
+      line-height: 1.6;
+      display: flex;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    main {
+      max-width: 32rem;
+      width: 100%;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
+    }
+    p {
+      margin-bottom: 1.25rem;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-top: 2rem;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid var(--muted);
+      padding-bottom: 1px;
+      transition: opacity 0.15s ease;
+    }
+    a:hover { opacity: 0.6; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Kevin Cheng</h1>
+    <p class="tagline">A short line about what you do.</p>
+
+    <p>
+      Write a sentence or two about yourself here — your background,
+      what you're working on, or what you're interested in. Keep it brief;
+      minimal is the whole point.
+    </p>
+
+    <div class="links">
+      <a href="https://github.com/kchengg1">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </main>
+</body>
+</html>
